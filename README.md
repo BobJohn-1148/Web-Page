@@ -10,9 +10,9 @@ This site includes HTML, CSS, and JavaScript. I used libraries from Awsome Icons
 
 *If you want to copy code, use a GPL license and give credit to me.*
 
-If you would like to follow my socials, you can add me on  [https://www.linkedin.com/in/jack-urbanczyk-07924b249/](#LinkedIn)
+If you would like to follow my socials, you can add me on  (https://www.linkedin.com/in/jack-urbanczyk-07924b249/ "LinkedIn")
 
-## LinkedIn
+
 
 
 
