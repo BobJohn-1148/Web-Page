@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jack's Project Gallery</title>
+  <link href="assets/css/gallery.css" rel="stylesheet">
+  <link href="assets/javascript/main.js" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+  <script src="assets/javascript/main.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+  <nav class="navbar navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">Jack's Portfolio</a>
+        <a href="index.html" class="btn btn-primary">Back to Home</a>
+    </div>
+</nav>
+
+<div class="container my-5">
+  <div class="container">
+    <div class="filter-container">
+        </div>
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1 class="text-center animate__animated animate__fadeInDown underline-title">Project Gallery</h1>
+        <div class="filter-container">
+            <button class="filter-button active" data-category="all">All</button>
+            <button class="filter-button" data-category="personal">Personal</button>
+            <button class="filter-button" data-category="school">School</button>
+        </div>
+    </div>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4" id="gallery">
+
+      <div class="col" data-category="personal">
+        <div class="card project-card h-100">
+          <img src="assets/immages/Computer-virus-icon-Graphics-13307801-1-1-580x386.jpg" class="card-img-top"/>
+          <div class="card-body">
+            <h5 class="card-title">Malware Development</h5>
+            <div class="project-description animate__animated animate__fadeInUp">
+              I have developed a strong foundation in reverse engineering and malware analysis, focusing on understanding software behavior,
+              identifying vulnerabilities, and studying techniques used in cybersecurity threats. This research helped me have a deeper understanding of AMSI and how anti-virus scanners and software works. 
+              <a href="https://github.com/BobJohn-1148" class="btn btn-primary mt-2">View on GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col" data-category="personal">
+        <div class="card project-card h-100">
+          <img src="assets/immages/Screenshot 2025-02-19 152305.png" class="card-img-top"/>
+          <div class="card-body">
+            <h5 class="card-title">Home Lab</h5>
+            <div class="project-description animate__animated animate__fadeInUp">
+              I designed and implemented a dedicated home lab environment, utilizing two servers and a cisco netowork switch to simulate real-world scenarios and enhance my technical expertise. 
+              This setup has allowed me to experiment with various technologies, such as: Prox mox, Docker, Kubernetes, SQL, and Network configuration with YARA rules.
+              I then practice advanced system administration, and learned new skills in a hands-on environment.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col" data-category="personal">
+        <div class="card project-card h-100">
+          <img src="assets/immages/university-of-michigan-z0itdzay8ussqgo4.jpg" class="card-img-top"/>
+          <div class="card-body">
+            <h5 class="card-title">University of Michigan Cybersecurity Bootcamp</h5>
+            <div class="project-description animate__animated animate__fadeInUp">
+              I had the opportunity to participate in a cybersecurity Bootcamp hosted by the University of Michigan at the age of 15.
+              This early experience sparked my interest in cybersecurity and provided a foundational understanding of key concepts and practical skills in the field.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col" data-category="personal">
+        <div class="card project-card h-100">
+          <img src="assets/immages/Hack5-Ducky.jpg" class="card-img-top"/>
+          <div class="card-body">
+            <h5 class="card-title">Hack5 USB Ruber Ducky</h5>
+            <div class="project-description animate__animated animate__fadeInUp">
+              At the age of 17, I purchased a Hak5 USB Rubber Ducky to enhance my understanding of penetration testing, reverse shells, and scripting.
+              Through hands-on experimentation with the device, I developed a deep appreciation for keystroke injection attacks and automation techniques,
+              further expanding my interest in cybersecurity, ethical hacking, and system vulnerabilities.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col" data-category="personal">
+        <div class="card project-card h-100">
+          <img src="assets/immages/Cloudflare.webp" class="card-img-top"/>
+          <div class="card-body">
+            <h5 class="card-title">Cloudflare Domain Configuration</h5>
+            <div class="project-description animate__animated animate__fadeInUp">
+              While developing this website, I gained hands-on experience with DNS and subdomain configuration.
+               Additionally, I explored Cloudflare Tunneling, enabling secure remote access to my servers without the need for port forwarding. 
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col" data-category="school">
+        <div class="card project-card h-100">
+          <img src="assets/immages/0ny75l0u8cv1-Slide16.jpg" class="card-img-top"/>
+          <div class="card-body">
+            <h5 class="card-title">Extro Ace certification</h5>
+            <div class="project-description animate__animated animate__fadeInUp">
+              While attending Lewis University, I completed a course in Digital Forensics, where I gained hands-on experience in forensic analysis, and evidence handling.
+               Upon completing the course, I earned the ACE certification. 
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col" data-category="personal">
+        <div class="card project-card h-100">
+          <img src="assets/immages/JmLZV4ApC5bNDLtw04acsT4rs.avif" class="card-img-top"/>
+          <div class="card-body">
+            <h5 class="card-title">Gitbook Documation</h5>
+            <div class="project-description animate__animated animate__fadeInUp">
+              Throughout my cybersecurity learning journey, I developed a GitBook site to document my research, notes, and findings.
+               This project is particularly meaningful to me, as it reflects the time, effort, and dedication I put into learning.
+               <a href="https://bob-johns-book.gitbook.io/cyber-security-hand-book" class="btn btn-primary mt-2">View Site</a> 
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col" data-category="personal">
+        <div class="card project-card h-100">
+          <img src="assets/immages/ALPHA-Card.jpg" class="card-img-top"/>
+          <div class="card-body">
+            <h5 class="card-title">AlFA Network Card</h5>
+            <div class="project-description animate__animated animate__fadeInUp">
+              I acquired an ALFA networking card to explore Wi-Fi security and network vulnerabilities.
+              Utilizing tools such as Aircrack-ng, Wireshark, and Ettercap, I gained practical experience in network analysis, packet sniffing, and wireless penetration testing.
+              The use of this helped to deepen my knowledge of Wireless communications and network variabilities.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col" data-category="personal">
+        <div class="card project-card h-100">
+          <img src="assets/immages/flarevm-background.png" class="card-img-top"/>
+          <div class="card-body">
+            <h5 class="card-title">FlareVM</h5>
+            <div class="project-description animate__animated animate__fadeInUp">
+              While studying malware analysis and virus detection, I utilized FLARE to establish a reverse engineering environment within my home lab.
+               This hands-on experience allowed me to work with tools such as PE Studio, Binary Ninja, and Ghidra, this helped me enhanc my proficiency in static and dynamic malware analysis.
+              Additionally, I explored Intrusion Prevention Systems and Intrusion Detection systems, configuring them with YARA rules to improve threat detection.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col" data-category="school">
+        <div class="card project-card h-100">
+          <img src="assets/immages/CISA-logo-2.webp" class="card-img-top"/>
+          <div class="card-body">
+            <h5 class="card-title">Critical Infristucuctre lab</h5>
+            <div class="project-description animate__animated animate__fadeInUp">
+              While at Lewis University, I participated in a Critical Infristucuctre lab, hosted by the university.
+              This research helped me to understand some of the real-world threats, and learn more about critical infrastructure in the cyber world.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col" data-category="personal">
+        <div class="card project-card h-100">
+          <img src="assets/immages/64add8262f6c1c06197e7607-1729099283970.jpg" class="card-img-top"/>
+          <div class="card-body">
+            <h5 class="card-title">TryHackMe</h5>
+            <div class="project-description animate__animated animate__fadeInUp">
+              While attending high school and college full-time, I actively developed my cybersecurity skills through platforms like TryHackMe.
+              This hands-on training allowed me to deepen my understanding of cybersecurity concepts, tools, and techniques.
+              <a href="https://tryhackme.com/r/p/davidgogens" class="btn btn-primary mt-2">View Profile</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+const filterButtons = document.querySelectorAll('.filter-button'); //filter button
+  const galleryItems = document.querySelectorAll('#gallery .col'); //display collum
+    filterButtons.forEach(button => { 
+      button.addEventListener('click', () => { //on click filter listener
+        const category = button.getAttribute('data-category');
+          //active class 
+          filterButtons.forEach(btn => btn.classList.remove('active'));
+          //clicked button
+          button.classList.add('active');
+          galleryItems.forEach(item => {
+            if (category === 'all' || item.getAttribute('data-category') === category) {
+                item.style.display = 'block';
+                } 
+                else {
+                item.style.display = 'none';
+                }
+    });
+  });
+}); 
+  </script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+.project-card {
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    overflow: hidden;
+    border-radius: 10px;
+    height: 100%;
+}
+.html {
+  background-color: #d3d6db
+}
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.project-description {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.7s ease, opacity 0.7s ease;
+    padding: 0 15px;
+}
+
+.project-card:hover .project-description {
+    max-height: 250px;
+    opacity: 1;
+    margin-top: 10px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-img-top {
+    width: 100%;
+    max-height: 250px; 
+    object-fit: cover; 
+}
+.container {
+  max-width: 1200px; 
+  margin: 2rem auto; 
+  padding: 0 15px; 
+}
+.filter-button {
+  padding: 8px 16px; 
+  border: none;
+  background-color: #f0f0f0; 
+  color: #333; 
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+.filter-button:hover {
+  background-color: #ddd; 
+}
+
+.filter-button.active {
+  background-color: #007bff; /* when active */
+  color: white;
+}
+
+.underline-title {
+  position: relative;
+  display: inline-block;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.underline-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  height: 3px;
+  width: 0;
+  background-color: #333; 
+  transition: width 1s ease; 
+}
+
+.underline-title.in-view::after {
+  width: 100%; 
+}

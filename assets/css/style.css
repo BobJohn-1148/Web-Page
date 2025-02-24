@@ -18,6 +18,9 @@ body {
   align-items: center;
 }
             
+.section-1 h1 {
+  font-size: clamp(2rem, 5vw, 3rem); 
+}
 
 
 .content h1 {
@@ -376,7 +379,22 @@ body {
       width: 100%;
     }
   }
-  
+  .btn3 {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1rem;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  .btn3:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  }
 
 .work-experience .experience-item, 
 .projects .project-item {
