@@ -71,19 +71,20 @@ def build():
         for path in ("location", "scale", "rotation_euler"):
             c.keyframe_insert(path, frame=frame)
 
+    face = math.radians(58)  # tilt keycaps toward the camera so the legends stay readable
     for i, c in enumerate(caps):
         spread = (i - 2) * 0.78
         # hidden inside the body at the start
         pose(i, 1, (-0.3 + i * 0.05, 0, 0.1), 0.01, (0, 0, 0))
         pose(i, 36, (-0.3 + i * 0.05, 0, 0.1), 0.01, (0, 0, 0))
-        # rising out in an arc
+        # rising out in an arc, legends tipping toward the viewer
         pose(i, 72, (-0.4 + spread * 0.9, 0.0, 1.0 + 0.18 * math.sin(i * 1.3)), 1.0,
-             (math.radians(12 * (i - 2)), math.radians(8 * (2 - i)), math.radians(6 * (i - 2))))
-        # floating further out, spreading
+             (math.radians(30 + 5 * (i - 2)), math.radians(5 * (2 - i)), math.radians(5 * (i - 2))))
+        # floating further out, spreading, facing the camera
         pose(i, 108, (0.2 + spread * 1.25, -0.2 * (i % 2), 2.0 + 0.3 * math.sin(i * 1.7)), 1.0,
-             (math.radians(25 * (2 - i)), math.radians(15 * (i - 2)), math.radians(14 * (i - 2))))
+             (face + math.radians(4 * (2 - i)), math.radians(6 * (i - 2)), math.radians(6 * (i - 2))))
         # lined up and traveling off to the right, as if typed
-        pose(i, 144, (3.0 + i * 0.8, 0.0, 1.7), 0.9, (math.radians(10), 0, 0))
+        pose(i, 144, (2.2 + i * 0.78, 0.0, 1.5), 0.9, (face, 0, 0))
 
     # slow idle roll on the stick
     for f, rz in ((1, math.radians(-4)), (72, math.radians(6)), (144, math.radians(-4))):
@@ -92,11 +93,11 @@ def build():
 
     studio_lights((0, 0, 0.8))
     camera_rig([
-        dict(frame=1, az=26, el=14, dist=9.6, target=(0.2, 0, 0.45), lens=62),
+        dict(frame=1, az=26, el=14, dist=10.8, target=(-0.1, 0, 0.45), lens=62),
         dict(frame=36, az=58, el=12, dist=5.8, target=(1.5, 0, 0), lens=70),
         dict(frame=72, az=-18, el=24, dist=8.4, target=(-0.3, 0, 0.65), lens=64),
-        dict(frame=108, az=10, el=8, dist=10.8, target=(0.7, 0, 1.0), lens=62),
-        dict(frame=144, az=40, el=16, dist=12.5, target=(2.2, 0, 1.0), lens=58),
+        dict(frame=108, az=10, el=10, dist=11.6, target=(0.3, 0, 1.0), lens=62),
+        dict(frame=144, az=24, el=14, dist=13.6, target=(2.4, 0, 0.9), lens=58),
     ], fstop=7.0)
 
     add_glow(scene, strength=0.45, size=0.45, threshold=1.0)
